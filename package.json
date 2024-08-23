@@ -1,0 +1,29 @@
+{
+  "name": "gitlist-to-markdown",
+  "version": "1.0.0",
+  "main": "toolEXE.js",
+  "bin": {
+    "gitlist-to-markdown": "./toolEXE.js"
+  },
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.46.0",
+    "pkg": "^5.8.1"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "markdown-it": "^14.1.0",
+    "request": "^2.88.2",
+    "xlsx": "^0.18.5"
+  },
+  "pkg": {
+    "assets": [
+      "source/getJenkins.tsv"
+    ],
+    "targets": [
+      "node18-win-x64"
+    ]
+  }
+}
